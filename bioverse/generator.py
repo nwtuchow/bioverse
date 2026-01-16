@@ -342,8 +342,6 @@ def reset_imaging_generator():
     g_imaging.insert_step('geometric_albedo')
     g_imaging.insert_step('compute_contrast')
     g_imaging.insert_step('effective_values')
-    g_imaging.insert_step('Example1_water')
-    g_imaging.insert_step('Example2_oxygen')
 
     g_imaging.set_arg('at_quadrature', True)
     g_imaging.save(label='imaging')
@@ -361,8 +359,6 @@ def reset_transit_generator():
     g_transit.insert_step('compute_transit_params')
     g_transit.insert_step('classify_planets')
     g_transit.insert_step('scale_height')
-    g_transit.insert_step('Example1_water')
-    g_transit.insert_step('Example2_oxygen')
 
     g_transit.set_arg('transit_mode', True)
     g_transit.save(label='transit')
